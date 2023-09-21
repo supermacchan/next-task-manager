@@ -1,8 +1,13 @@
 import Link from "next/link"
+import { getServerSession } from "next-auth/next";
+
+import { options } from "@/app/api/auth/[...nextauth]/options"
 
 import { Logo } from "@/components/Logo"
 
-export const Header = () => {
+export const Header = async () => {
+    const session = await getServerSession(options);
+
     return (
         <header className="px-12 py-3 flex justify-between items-center border-b-2">
             <Logo className="" />
@@ -10,9 +15,10 @@ export const Header = () => {
             <Link href={"/my-tasks"}>My Tasks</Link>
 
             <div className="flex gap-4">
-                <button type="button">Sign up</button>
-                <button type="button">Log in</button>
-                <button type="button">Log out</button>
+                {session 
+                    ? (<Link href={"/api/auth/signout"}>Sign out</Link>)
+                    : (<Link href={"/api/auth/signin"}>Sign in</Link>)
+                }
             </div>
         </header>
     )
