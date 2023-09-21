@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "text": "Render tasks",
+        "done": true,
+        "filters": [""]
+    },
+    {
+        "id": 2,
+        "text": "Add zustand",
+        "done": false,
+        "filters": [""]
+    },
+    {
+        "id": 3,
+        "text": "Add proper sign up",
+        "done": true,
+        "filters": [""]
+    },
+    {
+        "id": 4,
+        "text": "Add some styles",
+        "done": true,
+        "filters": [""]
+    },
+    {
+        "id": 5,
+        "text": "Add custom backend",
+        "done": false,
+        "filters": [""]
+    },
+    {
+        "id": 6,
+        "text": "Add session storage to the inputs",
+        "done": false,
+        "filters": [""]
+    },
+    {
+        "id": 7,
+        "text": "Add projects",
+        "done": false,
+        "filters": [""]
+    },
+    {
+        "id": 8,
+        "text": "Add kanban option",
+        "done": true,
+        "filters": [""]
+    }
+]

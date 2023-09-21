@@ -2,6 +2,9 @@ import { options } from "../api/auth/[...nextauth]/options";
 import { getServerSession } from "next-auth/next";
 import { redirect } from "next/navigation";
 
+import { Title } from "@/components/Title";
+import { TaskList } from "@/components/TaskList";
+
 export default async function MyTasks() {
     const session = await getServerSession(options);
 
@@ -10,8 +13,10 @@ export default async function MyTasks() {
     }
 
     return (
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <div>my tasks shalala</div>
+      <main className="flex flex-col items-center p-24">
+        <Title>my tasks shalala</Title>
+
+        <TaskList />
       </main>
     )
   }
