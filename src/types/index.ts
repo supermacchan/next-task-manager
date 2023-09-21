@@ -1,3 +1,7 @@
 export interface LogoProps {
-    className: string
+    className?: string
+}
+
+export interface GreetingProps {
+    name: string | null | undefined
 }
