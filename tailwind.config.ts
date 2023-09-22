@@ -25,6 +25,15 @@ const config: Config = {
       current: 'currentColor',
       'error-red': '#FF5757',
       'white': '#FFF',
+      'lavender': '#EAE8FF',
+      'platinum': '#D8D5DB',
+      'l-gray': '#ADACB5',
+      'd-gray': '#2D3142',
+      'navy': '#B0D7FF',
+      'salmon': '#EF798A',
+      'error': '#9B1D20',
+      'magenta': '#AE759F',
+      'pale': '#987284'
     },
     container: {
       center: true,

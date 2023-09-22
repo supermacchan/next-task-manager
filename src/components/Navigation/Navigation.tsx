@@ -5,7 +5,7 @@ import { options } from "@/app/api/auth/[...nextauth]/options";
 
 import { Greeting } from "@/components/Greeting";
 
-export const Navigation = async () => {
+export const Navigation: React.FC = async () => {
   const session = await getServerSession(options);
 
   return (

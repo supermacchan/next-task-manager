@@ -2,6 +2,7 @@ import { options } from "../api/auth/[...nextauth]/options";
 import { getServerSession } from "next-auth/next";
 import { redirect } from "next/navigation";
 
+import { TaskBar } from "@/components/TaskBar";
 import { Title } from "@/components/Title";
 import { TaskList } from "@/components/TaskList";
 
@@ -13,10 +14,15 @@ export default async function MyTasks() {
     }
 
     return (
-      <main className="flex flex-col items-center p-24">
-        <Title>my tasks shalala</Title>
+      <main className="p-6">
 
-        <TaskList />
+        <TaskBar />
+
+        <div className="pl-[200px]">
+          <Title className="mb-4 text-center">Make it happen!</Title>
+          <TaskList />
+        </div>
+        
       </main>
     )
   }

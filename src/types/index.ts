@@ -16,3 +16,13 @@ export type TaskType = {
 export interface TaskProps {
     task: TaskType
 }
+
+export interface TitleProps {
+    children: React.ReactNode;
+    className?: string
+}
+
+export interface CheckboxProps {
+    status: boolean;
+    className?: string;
+}
