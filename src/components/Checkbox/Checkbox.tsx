@@ -13,7 +13,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
     const [checked, setChecked] = useState(status);
 
     const checkboxStyles = classNames(
-        "relative w-[25px] h-[25px]",
+        "relative w-[25px] h-[25px] cursor-pointer",
         className
     )
 

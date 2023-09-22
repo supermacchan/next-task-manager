@@ -18,8 +18,8 @@ export default async function MyTasks() {
 
         <TaskBar />
 
-        <div className="pl-[200px]">
-          <Title className="mb-4 text-center">Make it happen!</Title>
+        <div className="md:pl-[200px]">
+          <Title className="mt-4 md:mb-0 mb-4 text-center">Make it happen!</Title>
           <TaskList />
         </div>
         

@@ -18,7 +18,7 @@ export const Logo: React.FC<LogoProps> = ({ className }) => {
                 height={70}
                 priority
             />
-            <h1 className="uppercase">Task manager</h1>
+            <h1 className="hidden md:block uppercase">Task manager</h1>
         </Link>
     )
 }

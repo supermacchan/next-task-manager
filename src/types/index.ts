@@ -26,3 +26,9 @@ export interface CheckboxProps {
     status: boolean;
     className?: string;
 }
+
+export type FilterType = {
+    id: number,
+    text: string,
+    unavailable: boolean
+}
